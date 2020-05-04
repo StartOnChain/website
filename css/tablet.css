@@ -1,0 +1,102 @@
+/*TABLET*/
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+            
+            header{
+                width: 95%;
+                margin-bottom: 20px;
+                flex-direction: row;
+                margin: 0 auto;
+            }
+    
+            .nav{
+                height: 100px;
+                width: auto;
+            }
+    
+            .logo img{
+                width: 130px;
+                height: 100px;
+                padding-left: 10px;
+                padding-top: 10px;   
+            }
+    
+            .nav a: hover{
+                background-color: #8e7c1a;
+                padding: 3px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            .menu{
+                width: 60%;
+                float: right;
+                padding-top: 40px;
+                justify-content: space-evenly;
+                display: flex;
+            }
+    
+            .hero{
+                background-color: #252932;
+
+                background-image: url('../images/Background_Tablet.png');
+                background-repeat: no-repeat;
+                background-position: 35px 118px;
+                background-attachment: fixed;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 25px;
+                width: 95%;
+                margin: 0 auto;
+            }
+    
+            .hero div{
+                padding-top: 100px;
+                padding-bottom: 100px;
+                height:290px;
+            }
+    
+            .hero h1{
+                color: white;
+                width: 100%;
+                text-align:center;
+                font-weight: 900;
+                font-size: 30px;
+                padding-bottom: 20px;
+                padding-top: 220px;
+            }
+            .services{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                width: 95%;
+                margin: 0 auto;
+            }
+    
+            .link{
+                flex: 1 0 21%;
+                margin: 10px;
+                height: 320px;
+                background-color: #7a8a8e;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+            }
+
+            .link:hover{
+                cursor: pointer;
+                background-color: #8e7c1a;
+                transform: scale(1.1);
+                transition: 1s;
+                transition-timing-function: ease-out;
+            }                
+            footer{
+                width: 95%;
+                margin: 0 auto;
+                padding-top: 10px;
+                color: white;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+
+}

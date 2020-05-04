@@ -1,0 +1,360 @@
+/*CORE*/
+
+body{
+    background-color: #252932;
+}
+    
+header{
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.nav{
+    height: 130px;
+    width: auto;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.logo img{
+    width: 130px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;   
+}
+
+.nav a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.nav a:hover{
+    background-color: #8e7c1a;
+    padding:10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menu{
+    width: 60%;
+    float: right;
+    padding-top: 60px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.burger{
+    display: none;
+}
+
+.hero{
+    background-color: #252932;
+    background-image: url('../images/background_home.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+/*    width: 90%;*/
+/*    margin: 0 auto;*/
+}
+
+.hero div{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height:390px;
+}
+
+.hero h1{
+    color: white;
+/*    z-index: 3;*/
+    width: 100%;
+    text-align:center;
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 320px;
+}
+
+.hero a{
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #9c2c17;
+    border-top: 2px solid #9c2c17;
+    border-right: 2px solid #9c2c17;
+    border-bottom: 2px solid #9c2c17;
+    border-left: 2px solid #9c2c17;
+    padding: 8px 8px 8px 8px;
+}
+
+.hero a:hover{
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 31px;
+    transition-timing-function: ease-out;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+/*
+    width: 90%;
+    margin: 0 auto;
+*/
+}
+
+.link{
+    flex: 1 0 21%;
+    margin: 10px;
+    height: 245px;
+    background-color: #7a8a8e;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.link:hover{
+    cursor: pointer;
+    background-color: #8e7c1a;
+    transform: scale(1.1);
+    transition: 1s;
+    transition-timing-function: ease-out;
+}
+
+.link img{
+    padding-top: 30px;
+    width: 50px;
+    height: 60px;
+}
+
+.link h3{
+   font-weight: 900;
+   font-size: 22px;
+}
+
+.link:hover h3{
+    font-size: 24px;
+    transition: 1s;
+}
+
+.link p{
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.link:hover p{
+    font-size: 19px;
+    transition: 1s;
+}
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer i{
+    color: white;
+}
+
+footer i:hover{
+    cursor:pointer;
+    color: #9c2c17;
+    transform: scale(1.11);
+}
+
+
+/*MOBILE*/
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+           
+            header{
+                width: 95%;
+                margin-bottom: 20px;
+                flex-direction: row;
+                margin: 0 auto;
+            }
+    
+            .nav{
+                height: 100px;
+                width: auto;
+            }
+            .logo{
+                width: 100px;
+                height: 100px;
+                float: left;
+            }  
+    
+            .logo img{
+                width: 90px;
+                height: 70px;
+                padding-left: 10px;
+                padding-top: 10px;   
+            }
+    
+            .nav a{
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 14px;
+                height: 22px;
+            }
+
+            .nav a:hover{
+                background-color: #8e7c1a;
+                padding:3px;
+                cursor: pointer;
+                transition: 0.5s;
+                
+            }
+
+            .menu{
+                width: 60%;
+                float: right;
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+/*
+            .burger{
+                display: block;
+            }
+*/
+    
+             .hero{
+                background-color: #252932;
+                background-image: url('../images/Background_Mobile.png');
+                background-repeat: no-repeat;
+                background-position: 32px 120px;
+                background-attachment: fixed;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                width: 95%;
+                margin: 0 auto;
+                
+            }
+       
+            .hero div{
+                padding-top: 60px;
+                padding-bottom: 30px;
+                height:220px;
+            
+/*                background-position: center center;*/
+            } 
+    
+            .hero h1{
+                color: white;
+                width: 100%;
+                text-align:center;
+                font-weight: 900;
+                font-size: 21px;
+                padding-bottom: 10px;
+                padding-top: 120px;
+            } 
+    
+            .hero a{
+                color: white;
+                justify-content: center;
+                text-decoration: none;
+                background-color: #9c2c17;
+                border-top: 2px solid #9c2c17;
+                border-right: 2px solid #9c2c17;
+                border-bottom: 2px solid #9c2c17;
+                border-left: 2px solid #9c2c17;
+                padding: 4px 4px 4px 4px;
+            }  
+    
+            .hero a:hover{
+                cursor: pointer;
+                padding: 5px;
+                transition: 0.5s;
+                font-size: 20px;
+                transition-timing-function: ease-out;
+            }
+    
+            .services{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                width: 95%;
+                margin: 0 auto;
+            } 
+    
+            .link{
+                flex: 1 0 31%;
+                margin: 10px;
+                height: 230px;
+                background-color: #7a8a8e;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+            }
+    
+            .link img{
+                padding-top: 15px;
+                width: 30px;
+                height: 35px;
+            }
+    
+            .link img:hover{
+                transform: scale(1.3);
+                transition: 1s;
+            }
+    
+            .link h3{
+               font-weight: 900;
+               font-size: 18px;
+            }
+    
+            .link:hover h3{
+                font-size: 20px;
+                transition: 1s;
+            }
+
+            .link p{
+                font-weight: 500;
+                font-size: 15px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .link:hover p{
+                font-size: 15px;
+                transition: 1s;
+            }
+    
+            footer{
+                width: 95%;
+                margin: 0 auto;
+                padding-top: 4px;
+                color: white;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+            }
+    
+}

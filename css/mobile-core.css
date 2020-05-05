@@ -59,7 +59,7 @@ header{
 
 .hero{
     background-color: #252932;
-    background-image: url('../images/background_home.png');
+    background-image: url('../images/background-home.png');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -246,7 +246,7 @@ footer i:hover{
     
              .hero{
                 background-color: #252932;
-                background-image: url('../images/Background_Mobile.png');
+                background-image: url('../images/background-mobile.png');
                 background-repeat: no-repeat;
                 background-position: 32px 120px;
                 background-attachment: fixed;

@@ -53,10 +53,6 @@ header{
     display: flex;
 }
 
-.burger{
-    display: none;
-}
-
 .hero{
     background-color: #252932;
     background-image: url('../images/background-home.png');
@@ -67,8 +63,6 @@ header{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 25px;
-/*    width: 90%;*/
-/*    margin: 0 auto;*/
 }
 
 .hero div{
@@ -79,7 +73,6 @@ header{
 
 .hero h1{
     color: white;
-/*    z-index: 3;*/
     width: 100%;
     text-align:center;
     font-weight: 900;
@@ -105,17 +98,13 @@ header{
     padding: 10px;
     transition: 0.5s;
     font-size: 31px;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-out;   
 }
 
 .services{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-/*
-    width: 90%;
-    margin: 0 auto;
-*/
 }
 
 .link{
@@ -185,23 +174,26 @@ footer i:hover{
 
 /*MOBILE*/
 
-@media screen and (min-width: 300px) and (max-width: 767px){
+@media screen and (min-width: 300px){
            
             header{
                 width: 95%;
                 margin-bottom: 20px;
-                flex-direction: row;
                 margin: 0 auto;
+                position: absolute;
             }
     
             .nav{
-                height: 100px;
-                width: auto;
+                height: auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
             }
+    
             .logo{
                 width: 100px;
-                height: 100px;
-                float: left;
+                height: 90px;
             }  
     
             .logo img{
@@ -217,54 +209,64 @@ footer i:hover{
                 color: white;
                 font-weight: 600;
                 text-transform: uppercase;
-                font-size: 14px;
-                height: 22px;
+                font-size: 16px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
             }
 
             .nav a:hover{
-                background-color: #8e7c1a;
-                padding:3px;
+                background-color: linear-gradient (#8e7c1a, #7a8a8e);
+                align-items: center;
+                padding:10px;
                 cursor: pointer;
                 transition: 0.5s;
-                
-            }
-
-            .menu{
-                width: 60%;
-                float: right;
-                padding-top: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                font-size: 18px;
+                height: 20px;
             }
     
-/*
-            .burger{
-                display: block;
+            a.burger{
+                font-size: 22px;        
             }
-*/
+    
+            .menu{
+                width: 40%;
+                padding-top: 0px;
+                display: block;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                height: 40px;
+                transition: 1s;      
+            }
+    
+            .open-nav{           
+                height: 250px;
+                background-color: #7a8a8e;
+                opacity: 0.8;
+                transition: 1s;
+            }
     
              .hero{
                 background-color: #252932;
                 background-image: url('../images/background-mobile.png');
                 background-repeat: no-repeat;
-                background-position: 32px 120px;
-                background-attachment: fixed;
+                background-position: center 140px;
+                background-attachment:inherit;
+                background-size: contain;
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 700;
                 font-size: 18px;
                 width: 95%;
-                margin: 0 auto;
-                
+                margin: 0 auto;     
             }
        
             .hero div{
                 padding-top: 60px;
-                padding-bottom: 30px;
+                padding-bottom: 184px;
                 height:220px;
-            
-/*                background-position: center center;*/
             } 
     
             .hero h1{
@@ -274,7 +276,7 @@ footer i:hover{
                 font-weight: 900;
                 font-size: 21px;
                 padding-bottom: 10px;
-                padding-top: 120px;
+                padding-top: 290px;
             } 
     
             .hero a{
@@ -295,6 +297,7 @@ footer i:hover{
                 transition: 0.5s;
                 font-size: 20px;
                 transition-timing-function: ease-out;
+                transition: scale(1.1);
             }
     
             .services{

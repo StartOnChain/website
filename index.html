@@ -7,8 +7,10 @@
       <link rel="manifest" href="/site.webmanifest">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta name="description" content="We offer blockchain related consultancy services">
+      <meta name="keywords" content="Blockchain, ethereum, bitcoin, cryptocurrencies, smart contracts, DApps">
       <title>Start on Chain</title>
-      <link rel="stylesheet" href="css/mobile-core.css">
+      <link rel="stylesheet" href="css/mobile.css">
       <link rel="stylesheet" href="css/tablet.css">
       <link rel="stylesheet" href="css/monitor.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -16,13 +18,15 @@
     </head>
       
     <body>
+    
+<!--Header-->
       <header>
         <div class="nav">
          <div class="logo">
-           <img src="images/logo.png">
-         </div>
+           <img src="images/logo.png" alt="Logo of the company Start on Chain">
+         </div> 
          <div class="menu">
-           <a href="#" class="burger"><i class="fas fa-bars"></i></a>
+           <a href="#" class="burger" onclick="openNav();"><i class="fas fa-bars"></i></a>
            <a href="#" class="active">Home</a>
            <a href="#services">Services</a>
            <a target="_blank" href="https://au.linkedin.com/in/radekostrowski">Portfolio</a>
@@ -30,37 +34,42 @@
          </div>          
         </div>
       </header>
-      
+<!--End Header-->
+    
+<!--Hero-->
      <section class="hero">
        <div>
         <h1>Let us connect you with the future</h1>
         <a href="mailto:hello@startonchain.com" target="_blank">Start with us</a>
        </div>
      </section>
-  
+<!--End hero-->
+   
+<!--Services-->
     <div id="services" class="services">
       <div class="link">
-          <img src="images/white-chain.png">
+          <img src="images/white-chain.png" alt="Blockchain image">
           <h3>Blockchain</h3>
           <p>We provide consultancy services on any aspect of blockchains</p>
       </div>
       <div class="link">
-          <img src="images/ethereum-icon.gif">
+          <img src="images/ethereum-icon.gif" alt="Ethereum logo">
           <h3>Ethereum</h3>
           <p>We specialiase on Ethereum and Decentralised Finance</p>
       </div>
       <div class="link">
-          <img src="images/dapps-icon.gif">
+          <img src="images/dapps-icon.gif" alt="DApps image">
           <h3>DApps</h3>
           <p>We build Distributed Applications connecting to Smart Contracts</p>
       </div>
       <div class="link">
-          <img src="images/smartcontracts-icon.gif">
+          <img src="images/smartcontracts-icon.gif" alt="Smart contract image">
           <h3>Smart Contracts</h3>
           <p>We develop Smart Contracts and integrations</p>
       </div>
     </div>
-        
+<!--End services-->
+       
         <footer id="contact">
           <p>
            <a href="https://au.linkedin.com/in/radekostrowski" target="_blank">
@@ -72,6 +81,11 @@
           
        </footer>
         
+        <script>
+            function openNav(){
+                document.getElementsByClassName('menu')[0].classList.toggle('open-nav');
+            }
+        </script>
     </body>
     
 </html>
